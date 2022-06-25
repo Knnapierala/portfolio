@@ -50,4 +50,5 @@ body {
 .controlls .control i {
   font-size: 1.5em;
   color: var(--color-white);
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
