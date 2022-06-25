@@ -119,4 +119,8 @@ section {
   font-size: 1.5em;
   color: var(--color-white);
   pointer-events: none;
+}
+
+.header-container .top-header h1 span {
+  color: var(--color-secondary);
 }/*# sourceMappingURL=style.css.map */
