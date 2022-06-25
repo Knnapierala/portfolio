@@ -21,11 +21,14 @@ function pageSwitch() {
   allSections.addEventListener('click', (e) => {
     const id = e.target.dataset.id;
     if(id) {
-      // remove active class from other buttons
-      pageBtns.forEach((btn) => {
+      // remove active class from other buttons, and add it to the current one
+      pageBtn.forEach((btn) => {
         btn.classList.remove('active')
+
+        console.log(btn)
       })
       e.target.classList.add('active')
+
       //Hide other sections
       sections.forEach((section) => {
         section.classList.remove('active')
