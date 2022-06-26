@@ -591,4 +591,43 @@ section {
   width: 100%;
   color: var(--color-white);
   resize: none;
+}
+.contact-conteiner .right-contact .input-control :focus {
+  background-color: var(--color-red2);
+}
+.contact-conteiner .right-contact .ic-2 {
+  display: flex;
+}
+.contact-conteiner .right-contact .ic-2 :last-child {
+  margin-left: 1.5em;
+}
+.contact-conteiner .right-contact .input-radio {
+  padding: 0.8em 1.1em;
+  background-color: var(--color-red1);
+  color: gray;
+  border-radius: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-conteiner .right-contact .input-radio label {
+  cursor: pointer;
+}
+.contact-conteiner .right-contact .submit-btn {
+  background-color: var(--color-red1);
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 35px;
+  padding: 0.8em 1.1em;
+  font-size: 1em;
+  transition: var(--trans);
+}
+.contact-conteiner .right-contact .submit-btn:hover {
+  background-color: var(--color-red2);
+  color: var(--color-white);
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

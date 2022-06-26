@@ -580,6 +580,43 @@ section {
         color: var(--color-white);
         resize: none;
       }
+      :focus{
+        background-color: var(--color-red2);
+      }
+    }
+    .ic-2{
+      display: flex;
+      :last-child {
+        margin-left: 1.5em;
+      }
+    }
+    .input-radio{
+      padding: .8em 1.1em;
+      background-color: var(--color-red1);
+      color: gray;
+      border-radius: 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      label {cursor: pointer;}
+    }
+    .submit-btn {
+      background-color: var(--color-red1);
+      color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      cursor: pointer;
+      border-radius: 35px;
+      padding: .8em 1.1em;
+      font-size: 1em;
+      transition: var(--trans);
+      &:hover{
+        background-color: var(--color-red2);
+        color: var(--color-white);
+        transform: scale(1.1);
+      }
     }
   }
 }
