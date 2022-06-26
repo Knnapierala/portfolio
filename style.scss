@@ -523,3 +523,63 @@ section {
   opacity: 1;
   transform: scale(1);
 }
+
+// Contacts 
+
+.contact-conteiner {
+  display: flex;
+  padding-top: 2em;
+  .left-contact {
+    flex: 2;
+    h4{
+      margin-top: 1em;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    p{
+      margin: 1em 0;
+      line-height: 2rem;
+    }
+    .contact-info{
+ 
+      .contact-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+          margin: .3em 0;
+          padding: 0;
+        }
+        .contact-icon{
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          i{
+            display: flex;
+            align-items: center;
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+  .right-contact {
+    flex: 4;
+    margin-left: 3em;
+    .input-control{
+      margin: 1em 0;
+      input, textarea{
+        border-radius: 35px;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        padding: .8em 1.1em;
+        outline: none;
+        border: none;
+        background-color: var(--color-red1);
+        width: 100%;
+        color: var(--color-white);
+        resize: none;
+      }
+    }
+  }
+}

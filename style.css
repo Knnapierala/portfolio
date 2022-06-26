@@ -536,4 +536,59 @@ section {
 .portfolio-item:hover .hover-links {
   opacity: 1;
   transform: scale(1);
+}
+
+.contact-conteiner {
+  display: flex;
+  padding-top: 2em;
+}
+.contact-conteiner .left-contact {
+  flex: 2;
+}
+.contact-conteiner .left-contact h4 {
+  margin-top: 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.contact-conteiner .left-contact p {
+  margin: 1em 0;
+  line-height: 2rem;
+}
+.contact-conteiner .left-contact .contact-info .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-conteiner .left-contact .contact-info .contact-item p {
+  margin: 0.3em 0;
+  padding: 0;
+}
+.contact-conteiner .left-contact .contact-info .contact-item .contact-icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.contact-conteiner .left-contact .contact-info .contact-item .contact-icon i {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+.contact-conteiner .right-contact {
+  flex: 4;
+  margin-left: 3em;
+}
+.contact-conteiner .right-contact .input-control {
+  margin: 1em 0;
+}
+.contact-conteiner .right-contact .input-control input, .contact-conteiner .right-contact .input-control textarea {
+  border-radius: 35px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.8em 1.1em;
+  outline: none;
+  border: none;
+  background-color: var(--color-red1);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
 }/*# sourceMappingURL=style.css.map */
