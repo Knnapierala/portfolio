@@ -14,7 +14,8 @@
   --color-red2: #5B0000;
   --bs-main: 2px 2px 15px rgba(0,0,0,.5);
   --fs-base: 18px;
-  --fs-header: 40px;
+  --fs-header: 60px;
+  --trans: all 1s ease-in-out;
 }
 // Genereal Styles
 body {
@@ -29,7 +30,7 @@ a{
   font-family: inherit;
 }
 header {
-  min-height: 100vh;
+  height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -44,7 +45,7 @@ section {
 }
 .section {
   transform: translateY(-100%);
-  transition: all 1s ease;
+  transition: all 1s ease-in-out;
 }
 
 .section-1{
@@ -109,12 +110,50 @@ section {
 
 // Header 
 .header-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
   .top-header{
+    margin-top: 2em;
+    padding: 2% 5% 2% 0;
     h1 {
+      font-size: var(--fs-header);
       span {
         color: var(--color-secondary);
+        font-size: 1.2em;
       }
     }
-
+    p {
+      line-height: 2em;}
+  }
+  .bottom-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .header-shape {
+      background-color:var(--color-red2);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      clip-path: polygon(68% 14%, 100% 62%, 100% 100%, 0 100%, 0 65%);
+      transition: var(--trans);
+    }
+    .image {
+      width: 50%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        transition: var(--trans);
+        &:hover{
+          filter: grayscale(0);
+        }
+      }
+    }
   }
 }
