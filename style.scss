@@ -599,6 +599,12 @@ section {
       justify-content: space-between;
       align-items: center;
       label {cursor: pointer;}
+      input[type="radio"] {
+        cursor: pointer;
+      }
+      &:hover{
+        background-color: var(--color-red2);
+      }
     }
     .submit-btn {
       background-color: var(--color-red1);
@@ -620,3 +626,5 @@ section {
     }
   }
 }
+
+// TODO add media queries 

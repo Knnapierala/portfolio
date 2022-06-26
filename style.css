@@ -613,6 +613,12 @@ section {
 .contact-conteiner .right-contact .input-radio label {
   cursor: pointer;
 }
+.contact-conteiner .right-contact .input-radio input[type=radio] {
+  cursor: pointer;
+}
+.contact-conteiner .right-contact .input-radio:hover {
+  background-color: var(--color-red2);
+}
 .contact-conteiner .right-contact .submit-btn {
   background-color: var(--color-red1);
   color: gray;
