@@ -130,7 +130,8 @@ section {
 }
 .header-container .top-header {
   margin-top: 2em;
-  padding: 2% 5% 2% 0;
+  padding: 2% 5% 2% 2%;
+  padding-right: calc(5% + 55px);
 }
 .header-container .top-header h1 {
   font-size: var(--fs-header);
@@ -146,6 +147,7 @@ section {
   display: flex;
   align-items: center;
   position: relative;
+  height: 100%;
 }
 .header-container .bottom-header .header-shape {
   background-color: var(--color-red2);
@@ -155,9 +157,8 @@ section {
   bottom: 0;
   left: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(68% 14%, 100% 62%, 100% 100%, 0 100%, 0 65%);
-          clip-path: polygon(68% 14%, 100% 62%, 100% 100%, 0 100%, 0 65%);
-  transition: var(--trans);
+  -webkit-clip-path: polygon(60% 25%, 78% 25%, 100% 83%, 100% 100%, 0 100%, 0 77%);
+          clip-path: polygon(60% 25%, 78% 25%, 100% 83%, 100% 100%, 0 100%, 0 77%);
 }
 .header-container .bottom-header .image {
   width: 50%;
