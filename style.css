@@ -124,7 +124,7 @@ section {
 }
 .btn-container .btn-social .btn-text {
   font-weight: 500;
-  padding: 0 0.2em;
+  padding: 0 0.4em;
   transition: var(--trans);
 }
 .btn-container .btn-social .btn-icon {
