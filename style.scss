@@ -197,6 +197,13 @@ section {
       pointer-events: none;
     }
   }
+  .active-pg{
+    background-color: var(--color-secondary);
+    transition: var(--trans);
+    i{
+      color: var(--color-white);
+    }
+  }
 }
 
 // Header 

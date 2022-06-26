@@ -208,6 +208,13 @@ section {
   color: var(--color-white);
   pointer-events: none;
 }
+.controlls .active-pg {
+  background-color: var(--color-secondary);
+  transition: var(--trans);
+}
+.controlls .active-pg i {
+  color: var(--color-white);
+}
 
 .header-container {
   display: flex;
