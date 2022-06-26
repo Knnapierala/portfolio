@@ -14,7 +14,7 @@
   --color-red2: #5B0000;
   --bs-main: 2px 2px 15px rgba(0,0,0,.5);
   --fs-base: 18px;
-  --fs-header: 60px;
+  --fs-header: 3em;
   --trans: all 1s ease-in-out;
 }
 
@@ -93,6 +93,64 @@ section {
   }
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-base);
+  color: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 5%;
+}
+.footer p {
+  padding: 5px;
+}
+
+.btn-container {
+  display: flex;
+}
+.btn-container .btn-social {
+  border-radius: 30px;
+  color: inherit;
+  position: relative;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  overflow: hidden;
+}
+.btn-container .btn-social .btn-text {
+  font-weight: 500;
+  padding: 0 0.2em;
+  transition: var(--trans);
+}
+.btn-container .btn-social .btn-icon {
+  background-color: var(--color-red2);
+  border-radius: 50%;
+  padding: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-container .btn-social::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: var(--trans);
+  z-index: -1;
+}
+.btn-container .btn-social:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-red2);
+  transform: translateX(0);
+}
+
 .controlls {
   position: fixed;
   z-index: 5;
@@ -161,6 +219,7 @@ section {
           clip-path: polygon(60% 25%, 78% 25%, 100% 83%, 100% 100%, 0 100%, 0 77%);
 }
 .header-container .bottom-header .image {
+  position: relative;
   width: 50%;
   height: 100%;
 }
