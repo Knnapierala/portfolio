@@ -151,6 +151,33 @@ section {
   transform: translateX(0);
 }
 
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 600;
+}
+.section-title h2 span {
+  color: #FF0202;
+}
+.section-title h2 .back-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  font-weight: 800;
+  color: var(--color-red2);
+  z-index: -1;
+  transition: var(--trans);
+  font-size: 150%;
+}
+
 .controlls {
   position: fixed;
   z-index: 5;
