@@ -4,6 +4,7 @@ const sections = document.querySelectorAll('.section');
 const pageBtns = document.querySelectorAll('.controlls');
 const pageBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-body');
+const subBtn = document.querySelector('#btn-submit');
 
 
 // functions 
@@ -38,6 +39,7 @@ function pageSwitch() {
       
     }
   })
+  subBtn.addEventListener('click', () => alert("Thank you for submiting! I will look prettier in the future :)"));
 }
 
 pageSwitch()
