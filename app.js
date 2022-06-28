@@ -39,7 +39,12 @@ function pageSwitch() {
       
     }
   })
-  subBtn.addEventListener('click', () => alert("Thank you for submiting! I will look prettier in the future :)"));
+  subBtn.addEventListener('click', () => 
+  subBtn.value = "Thank you!");
+  subBtn.addEventListener('click', () => 
+  subBtn.disabled = true);
+  subBtn.addEventListener('click', () => 
+  alert("Thank you for submiting! I will look prettier in the future :)"));
 }
 
 pageSwitch()
