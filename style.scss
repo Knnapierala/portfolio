@@ -18,6 +18,16 @@
   --fs-header: 3em;
   --trans: all 1s ease-in-out;
 }
+
+.light-mode {
+  --color-primary: #fff;
+  --color-secondary: #FFD700;
+  --color-white: #000;
+  --color-base: #d9cccc;
+  --color-red1: #bac389;
+  --color-red2: #c7c427;
+  --color-crim: #ffd900;
+}
 // Genereal Styles
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -151,7 +161,7 @@ section {
   font-size: 3em;
   font-weight: 600;
   span {
-    color: #FF0202;
+    color: var(--color-crim);
   }
   .back-text{ 
     position: absolute;

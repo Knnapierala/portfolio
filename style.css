@@ -19,6 +19,16 @@
   --trans: all 1s ease-in-out;
 }
 
+.light-mode {
+  --color-primary: #fff;
+  --color-secondary: #FFD700;
+  --color-white: #000;
+  --color-base: #d9cccc;
+  --color-red1: #bac389;
+  --color-red2: #c7c427;
+  --color-crim: #ffd900;
+}
+
 body {
   font-family: "Ubuntu", sans-serif;
   font-size: var(--fs-base);
@@ -166,7 +176,7 @@ section {
   font-weight: 600;
 }
 .section-title h2 span {
-  color: #FF0202;
+  color: var(--color-crim);
 }
 .section-title h2 .back-text {
   position: absolute;
