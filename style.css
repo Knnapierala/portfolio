@@ -216,6 +216,27 @@ section {
   color: var(--color-white);
 }
 
+.theme-btn {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+.theme-btn:active {
+  transform: translateY(-5px);
+}
+.theme-btn i {
+  font-size: 2em;
+  pointer-events: none;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;

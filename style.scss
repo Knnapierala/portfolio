@@ -168,7 +168,7 @@ section {
   }
  }
 
-// Control buttons 
+// Control buttons & theme button
 
 .controlls {
   position: fixed;
@@ -203,6 +203,27 @@ section {
     i{
       color: var(--color-white);
     }
+  }
+}
+
+.theme-btn {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .1s ease-in-out;
+  &:active {
+    transform: translateY(-5px);
+  }
+  i{
+    font-size: 2em;
+    pointer-events: none;
   }
 }
 
