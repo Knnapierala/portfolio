@@ -8,7 +8,14 @@ const subBtn = document.querySelector('#btn-submit');
 
 
 // functions 
-
+function subBtnAction() {
+  subBtn.addEventListener('click', () => 
+  subBtn.value = "Thank you!");
+  subBtn.addEventListener('click', () => 
+  subBtn.disabled = true);
+  subBtn.addEventListener('click', () => 
+  alert("Thank you for submiting! I will look prettier in the future :)"));
+}
 function pageSwitch() {
   // change active-pg class on clicked button 
   for(let i =0; i < pageBtn.length; i++) {
@@ -38,13 +45,9 @@ function pageSwitch() {
       element.classList.add('active')
       
     }
+    subBtnAction();
   })
-  subBtn.addEventListener('click', () => 
-  subBtn.value = "Thank you!");
-  subBtn.addEventListener('click', () => 
-  subBtn.disabled = true);
-  subBtn.addEventListener('click', () => 
-  alert("Thank you for submiting! I will look prettier in the future :)"));
+
 }
 
 pageSwitch()
