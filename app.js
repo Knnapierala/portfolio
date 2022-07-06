@@ -9,12 +9,11 @@ const subBtn = document.querySelector('#btn-submit');
 
 // functions 
 function subBtnAction() {
-  subBtn.addEventListener('click', () => 
-  subBtn.value = "Thank you!");
+  const confirmationWidnow = document.querySelector('.submit-confirmation');
   subBtn.addEventListener('click', () => 
   subBtn.disabled = true);
   subBtn.addEventListener('click', () => 
-  alert("Thank you for submiting! I will look prettier in the future :)"));
+  confirmationWidnow.style.visibility = "visible");
 }
 function pageSwitch() {
   // change active-pg class on clicked button 

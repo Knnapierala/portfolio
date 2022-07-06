@@ -655,6 +655,22 @@ section {
         transform: scale(1.1);
       }
     }
+    .submit-confirmation {
+      visibility: hidden;
+      border: 3px solid var(--color-secondary);
+      border-radius: 20px;
+      width: 40%;
+      height: 50px;
+      margin: 10px auto;
+      background-color: var(--color-red1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: var(--trans);
+      p{
+        color: var(--color-white);
+      }
+    }
   }
 }
 

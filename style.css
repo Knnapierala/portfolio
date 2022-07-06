@@ -667,4 +667,20 @@ section {
   background-color: var(--color-red2);
   color: var(--color-white);
   transform: scale(1.1);
+}
+.contact-conteiner .right-contact .submit-confirmation {
+  visibility: hidden;
+  border: 3px solid var(--color-secondary);
+  border-radius: 20px;
+  width: 40%;
+  height: 50px;
+  margin: 10px auto;
+  background-color: var(--color-red1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--trans);
+}
+.contact-conteiner .right-contact .submit-confirmation p {
+  color: var(--color-white);
 }/*# sourceMappingURL=style.css.map */
