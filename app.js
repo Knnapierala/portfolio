@@ -5,7 +5,7 @@ const pageBtns = document.querySelectorAll('.controlls');
 const pageBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-body');
 const subBtn = document.querySelector('#btn-submit');
-
+const dateOfPage = document.getElementById('date');
 
 // functions 
 function subBtnAction() {
@@ -60,3 +60,5 @@ function pageSwitch() {
 }
 
 pageSwitch()
+
+dateOfPage.innerHTML = new Date().getFullYear();
