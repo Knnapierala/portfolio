@@ -649,12 +649,13 @@ section {
       padding: .8em 1.1em;
       font-size: 1em;
       transition: var(--trans);
-      &:hover{
+      &:not(.disable):hover{
         background-color: var(--color-red2);
         color: var(--color-white);
         transform: scale(1.1);
       }
     }
+
     .submit-confirmation {
       visibility: hidden;
       border: 3px solid var(--color-secondary);

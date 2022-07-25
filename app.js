@@ -6,15 +6,19 @@ const pageBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-body');
 const subBtn = document.querySelector('#btn-submit');
 const dateOfPage = document.getElementById('date');
+const confirmationWidnow = document.querySelector('.submit-confirmation');
+const form = document.querySelector('.contact-form');
+//events 
 
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  subBtn.disabled = true;
+  subBtn.classList.add('disable')
+  confirmationWidnow.style.visibility = "visible"
+});
 // functions 
-function subBtnAction() {
-  const confirmationWidnow = document.querySelector('.submit-confirmation');
-  subBtn.addEventListener('click', () => 
-  subBtn.disabled = true);
-  subBtn.addEventListener('click', () => 
-  confirmationWidnow.style.visibility = "visible");
-}
+
+
 function pageSwitch() {
   // change active-pg class on clicked button 
   for(let i =0; i < pageBtn.length; i++) {
@@ -53,12 +57,6 @@ function pageSwitch() {
   }
 
   )
-
-
-
-  subBtnAction();
 }
-
 pageSwitch()
-
 dateOfPage.innerHTML = new Date().getFullYear();
