@@ -10,7 +10,7 @@ const confirmationWidnow = document.querySelector('.submit-confirmation');
 const form = document.querySelector('.contact-form');
 //events 
 
-form.addEventListener('submit', function(e){
+form.addEventListener('submit', function (e) {
   e.preventDefault();
   subBtn.disabled = true;
   subBtn.classList.add('disable')
@@ -21,8 +21,8 @@ form.addEventListener('submit', function(e){
 
 function pageSwitch() {
   // change active-pg class on clicked button 
-  for(let i =0; i < pageBtn.length; i++) {
-    pageBtn[i].addEventListener('click', function() {
+  for (let i = 0; i < pageBtn.length; i++) {
+    pageBtn[i].addEventListener('click', function () {
       let currentBtn = document.querySelectorAll('.active-pg');
       currentBtn[0].className = currentBtn[0].className.replace('active-pg', '');
       this.className += ' active-pg';
@@ -31,7 +31,7 @@ function pageSwitch() {
   // Add active class to the section linked by id to the active-pg button 
   allSections.addEventListener('click', (e) => {
     const id = e.target.dataset.id;
-    if(id) {
+    if (id) {
       // remove active class from other buttons, and add it to the current one
       pageBtn.forEach((btn) => {
         btn.classList.remove('active')
@@ -46,15 +46,15 @@ function pageSwitch() {
       })
       const element = document.getElementById(id);
       element.classList.add('active')
-      
+
     }
   })
   // theme switch
   const themeBtn = document.querySelector('.theme-btn');
   themeBtn.addEventListener('click', () => {
-    let element = document.body;
-    element.classList.toggle('light-mode')
-  }
+      let element = document.body;
+      element.classList.toggle('light-mode')
+    }
 
   )
 }
