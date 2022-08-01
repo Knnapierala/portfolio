@@ -7,11 +7,11 @@
 
 :root {
   --color-primary: #000;
-  --color-secondary: #ff0202;
-  --color-white: #fff;
+  --color-secondary: #FF0202;
+  --color-white: #FFF;
   --color-base: #080303;
   --color-red1: #330000;
-  --color-red2: #5b0000;
+  --color-red2: #5B0000;
   --color-crim: #dc143c;
   --bs-main: 2px 2px 15px rgba(255, 63, 63, 0.5);
   --fs-base: 18px;
@@ -21,7 +21,7 @@
 
 .light-mode {
   --color-primary: #fff;
-  --color-secondary: #ffd700;
+  --color-secondary: #FFD700;
   --color-white: #000;
   --color-base: #d9cccc;
   --color-red1: #bac389;
@@ -85,7 +85,7 @@ section {
 .active {
   display: block;
   -webkit-animation: showPage 1s ease-in-out;
-  animation: showPage 1s ease-in-out;
+          animation: showPage 1s ease-in-out;
 }
 @-webkit-keyframes showPage {
   0% {
@@ -109,8 +109,8 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color-base);
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -282,15 +282,8 @@ section {
   bottom: 0;
   left: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(
-    60% 25%,
-    78% 25%,
-    100% 83%,
-    100% 100%,
-    0 100%,
-    0 77%
-  );
-  clip-path: polygon(60% 25%, 78% 25%, 100% 83%, 100% 100%, 0 100%, 0 77%);
+  -webkit-clip-path: polygon(60% 25%, 78% 25%, 100% 83%, 100% 100%, 0 100%, 0 77%);
+          clip-path: polygon(60% 25%, 78% 25%, 100% 83%, 100% 100%, 0 100%, 0 77%);
 }
 .header-container .bottom-header .image {
   position: relative;
@@ -519,7 +512,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   border-radius: 15%;
 }
 .portfolios .portfolio-item .hover-links {
@@ -617,8 +610,7 @@ section {
 .contact-conteiner .right-contact .input-control {
   margin: 1em 0;
 }
-.contact-conteiner .right-contact .input-control input,
-.contact-conteiner .right-contact .input-control textarea {
+.contact-conteiner .right-contact .input-control input, .contact-conteiner .right-contact .input-control textarea {
   border-radius: 35px;
   font-weight: inherit;
   font-size: inherit;
@@ -652,7 +644,7 @@ section {
 .contact-conteiner .right-contact .input-radio label {
   cursor: pointer;
 }
-.contact-conteiner .right-contact .input-radio input[type="radio"] {
+.contact-conteiner .right-contact .input-radio input[type=radio] {
   cursor: pointer;
 }
 .contact-conteiner .right-contact .input-radio:hover {
@@ -705,7 +697,6 @@ section {
   }
   .footer {
     bottom: 82px;
-    background-color: var(--);
   }
   .controlls {
     top: auto;
@@ -720,4 +711,4 @@ section {
   .controlls .control {
     margin: 0.5rem 0.3rem;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
