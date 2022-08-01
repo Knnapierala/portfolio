@@ -683,4 +683,10 @@ section {
 }
 .contact-conteiner .right-contact .submit-confirmation p {
   color: var(--color-white);
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
