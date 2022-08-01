@@ -1,5 +1,31 @@
 @media screen and (max-width: 600px) {
-  header {
-    padding: 0;
+  .header-container{
+  justify-content: flex-start;
+    .top-header {
+      h1{
+        font-size: var(--fs-base);
+      }
+      p {
+        font-size: 0.75rem ;
+      }
+    }
+  }
+  .footer { 
+    bottom: 82px;
+    background-color: var(--);
+  }
+
+  .controlls{
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-red1);
+    .control {
+      margin: .5rem .3rem;
+    }
   }
 }
