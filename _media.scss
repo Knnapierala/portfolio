@@ -53,6 +53,9 @@
     }
     .right-contact{
       margin: 0 auto;
+      .submit-confirmation{
+        width: 60%;
+      }
     }
   }
 
@@ -85,5 +88,11 @@
     .control {
       margin: 0 .3rem;
     }
+  }
+  .theme-btn {
+    top: 1%;
+    right: 1%;
+    width: 45px;
+    height: 45px;
   }
 }

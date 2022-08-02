@@ -732,6 +732,9 @@ section {
   .contact-conteiner .right-contact {
     margin: 0 auto;
   }
+  .contact-conteiner .right-contact .submit-confirmation {
+    width: 60%;
+  }
   .section {
     padding: 2rem 2.5rem;
   }
@@ -754,5 +757,11 @@ section {
   }
   .controlls .control {
     margin: 0 0.3rem;
+  }
+  .theme-btn {
+    top: 1%;
+    right: 1%;
+    width: 45px;
+    height: 45px;
   }
 }/*# sourceMappingURL=style.css.map */
