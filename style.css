@@ -695,8 +695,52 @@ section {
   .header-container .top-header p {
     font-size: 0.75rem;
   }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+  .about-container .left-about h4 {
+    font-size: 1.5rem;
+  }
+  .timeline {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .about-tech .tech-bars {
+    grid-template-columns: 1fr;
+  }
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .contact-conteiner {
+    flex-direction: column;
+    padding-bottom: 6rem;
+  }
+  .contact-conteiner .left-contact h4 {
+    font-size: 1.5rem;
+  }
+  .contact-conteiner .right-contact {
+    margin: 0 auto;
+  }
+  .section {
+    padding: 2rem 2.5rem;
+  }
   .footer {
-    bottom: 82px;
+    bottom: 50px;
+    height: auto;
+  }
+  .section-title h2 {
+    font-size: 2rem;
   }
   .controlls {
     top: auto;
@@ -709,6 +753,6 @@ section {
     background-color: var(--color-red1);
   }
   .controlls .control {
-    margin: 0.5rem 0.3rem;
+    margin: 0 0.3rem;
   }
 }/*# sourceMappingURL=style.css.map */
