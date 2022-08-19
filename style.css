@@ -411,16 +411,16 @@ section {
   width: 60%;
 }
 .about-tech .tech-bars .tech-bar .tech-container .progress .css {
-  width: 35%;
+  width: 60%;
 }
 .about-tech .tech-bars .tech-bar .tech-container .progress .js {
-  width: 40%;
+  width: 45%;
 }
 .about-tech .tech-bars .tech-bar .tech-container .progress .sass {
   width: 35%;
 }
 .about-tech .tech-bars .tech-bar .tech-container .progress .react {
-  width: 15%;
+  width: 50%;
 }
 .about-tech .tech-bars .tech-bar .tech-container .progress .ts {
   width: 30%;
